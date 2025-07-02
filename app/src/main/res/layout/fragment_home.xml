@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="189dp"
+        android:layout_height="182dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/carpark_logo_final"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <TextView
+            android:id="@+id/textwelcome"
+            android:layout_width="286dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="80dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/police"
+            android:text="Walk to your car "
+            android:textColor="@color/gray_700"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize" />
+
+    <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="214dp"
+            android:layout_height="227dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/carlogo"
+            tools:ignore="ImageContrastCheck" />
+
+    <TextView
+            android:id="@+id/signUpButton"
+            android:layout_width="232dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/police"
+            android:text="Never lose your car again
+find it anytime,anywhere!"
+
+            android:textColor="@color/gray_700"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize" />
+
+
+</LinearLayout>

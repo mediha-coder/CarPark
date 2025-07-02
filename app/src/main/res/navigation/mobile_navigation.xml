@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myapplication.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_nav_home_to_signInFragment2"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.myapplication.ui.test.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.myapplication.indoor.SlideshowFragment"
+        android:label="indoor"
+        tools:layout="@layout/indoor" />
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.myapplication.sign.SignInFragment"
+        android:label="SignInFragment" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.myapplication.sign.SignUpFragment"
+        android:label="SignUpFragment" />
+    <fragment
+            android:id="@+id/wifi"
+            android:name="com.example.myapplication.wifi.CarLocatorFragment"
+            android:label="indoor" />
+    <fragment
+            android:id="@+id/userguide"
+            android:name="com.example.myapplication.guide.UserGuideFragment"
+            android:label="User Guide" />
+    <fragment
+            android:id="@+id/settings"
+            android:name="com.example.myapplication.settings.SettingsFragment"
+            android:label="Settings" />
+
+
+
+
+</navigation>

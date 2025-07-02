@@ -1,0 +1,88 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <!-- Résultat du meilleur Wi-Fi -->
+    <LinearLayout
+            android:id="@+id/wifiInfoContainer"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+        <ImageView
+                android:id="@+id/wifiIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/wifi_signal"
+                android:layout_marginEnd="16dp"
+                app:tint="@color/teal_700" />
+
+        <TextView
+                android:id="@+id/wifiInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Boutons -->
+    <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+        <Button
+                android:id="@+id/btnScan"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scanner Wi-Fi" />
+
+        <Button
+                android:id="@+id/btnReturn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Retourner"
+                android:textColor="#0D47A1" />
+    </LinearLayout>
+
+    <!-- Indicateur RSSI -->
+    <ProgressBar
+            android:id="@+id/signalProgressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="16dp"/>
+
+    <!-- Texte dynamique (proximité) -->
+    <TextView
+            android:id="@+id/textViewWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"/>
+
+    <!-- Graphique -->
+    <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"/>
+</LinearLayout>

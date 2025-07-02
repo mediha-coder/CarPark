@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- Boussole -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activate Compass"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        <Switch
+                android:id="@+id/switchgps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compass"
+                tools:ignore="TouchTargetSizeCheck" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activate Localisation"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        <Switch
+                android:id="@+id/switchCompass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Localisation"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Sensibilité -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compass Sensibility"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+        <SeekBar
+                android:id="@+id/seekBarSensitivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:progress="5" />
+
+        <TextView
+                android:id="@+id/sensitivityValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+        <!-- WiFi auto-scan -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan WiFi"
+                android:textStyle="bold" />
+
+        <Switch
+                android:id="@+id/switchWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable scan  WiFi"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Intervalle de scan -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Scan Interval (seconds)"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+        <Spinner
+                android:id="@+id/spinnerScanInterval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Bouton de sauvegarde -->
+        <Button
+                android:id="@+id/btnSaveSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

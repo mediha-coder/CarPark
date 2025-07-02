@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CarPark</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">CarPark</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Outdoor</string>
+    <string name="menu_slideshow">Underground</string>
+    <string name="wifi">Indoor</string>
+
+
+    <string name="icon_password_visible" />
+    <string name="icon_password_hidden" />
+    <string name="empty_string" />
+    <string name="save">save</string>
+</resources>

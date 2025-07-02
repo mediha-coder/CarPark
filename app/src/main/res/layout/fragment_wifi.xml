@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- Scan Button -->
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnScan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scan Wi-Fi"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:icon="@drawable/wifi_signal"
+                android:backgroundTint="@color/purple_500"
+                app:iconGravity="textStart"
+
+                android:padding="12dp" />
+
+
+
+        <!-- Wi-Fi Result -->
+        <TextView
+                android:id="@+id/textViewWifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Network results here"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:paddingTop="24dp"
+                android:fontFamily="sans-serif-medium" />
+
+        <!-- Signal Strength Progress -->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/signalProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="@color/teal_700"
+                app:trackColor="@android:color/darker_gray"
+                style="@style/Widget.Material3.LinearProgressIndicator" />
+
+        <!-- Graph Chart Card -->
+        <androidx.cardview.widget.CardView
+                android:id="@+id/cardWifiInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp">
+
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/wifi_signal"
+                         />
+
+                <TextView
+                        android:id="@+id/textBestNetwork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Network info"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                        android:paddingVertical="8dp" />
+
+                <Button
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Return"
+                        android:drawableStart="@drawable/wifi_signal"
+                        android:iconTint="@color/white"
+                        android:backgroundTint="@color/teal_700"
+                        android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+
+
+    </LinearLayout>
+</ScrollView>

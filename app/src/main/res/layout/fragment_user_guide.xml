@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrollViewGuide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/textGuideTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:paddingBottom="16dp"
+                android:text="User Guide"
+                android:textColor="@color/pistache_green"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        <ImageView
+                android:id="@+id/imageGuideIcon"
+                android:layout_width="81dp"
+                android:layout_height="78dp"
+                android:layout_gravity="center"
+                android:contentDescription="Guide Icon"
+                android:paddingBottom="24dp"
+                android:src="@drawable/manual"
+                app:tint="@color/green_500" />
+
+                <TextView
+                        android:id="@+id/titleOutdoor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Outdoor"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green_200"
+                        android:padding="12dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+        <TextView
+                android:id="@+id/contentOutdoor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:background="@drawable/text_background"
+                android:lineSpacingExtra="6dp"
+                android:textIsSelectable="true"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:text="
+\u2022 Launch Outdoor mode.\n
+\u2022 Click on 'Save my position' to store your current location.\n
+\u2022 Walk around to update your path.\n
+\u2022 When finished, click on 'Go back' to return to the main screen."
+                />
+
+
+
+        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#DDDDDD"
+                        android:layout_marginVertical="8dp" />
+
+                <TextView
+                        android:id="@+id/titleIndoor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Indoor"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green_500"
+                        android:padding="12dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+        <TextView
+                android:id="@+id/contentIndoor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:background="@drawable/text_background"
+                android:lineSpacingExtra="6dp"
+                android:textIsSelectable="true"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:text="
+\u2022 Open Indoor mode.\n
+
+\u2022 Scan  and save Wi-Fi signals with the 'Scan wifi' button.\n
+
+\u2022 Return to your car with the return button "
+                />
+
+
+        <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#DDDDDD"
+                        android:layout_marginVertical="8dp" />
+
+                <TextView
+                        android:id="@+id/titleUnderground"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="12dp"
+                        android:text="Underground"
+                        android:textColor="@color/green_700"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/contentUnderground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:background="@drawable/text_background"
+                android:lineSpacingExtra="6dp"
+                android:textIsSelectable="true"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:text="
+\u2022 Open Underground mode.\n
+\u2022 Since GPS is not available, rely on sensor fusion (compass, accelerometer).\n
+\u2022 Manually mark your positions.\n
+\u2022 Save the orientation using the compass\n
+\u2022 Save your underground path.\n
+\u2022 Use 'Go back' button and follow the saved trajectory .
+\u2022 If you come back from another door use the orientation of the compass and you must go only on the street
+"
+                />
+
+    </LinearLayout>
+
+        </ScrollView>
+
+
